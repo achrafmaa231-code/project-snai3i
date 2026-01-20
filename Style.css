@@ -1,0 +1,89 @@
+#title {
+    font-family: monospace;
+    color: rgb(51, 35, 141);
+    text-decoration: dashed;
+    text-align: center;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(70, 52, 175);
+    font-size: 500%;
+    margin: 50px 50px 50px 50px;
+    position:sticky ;
+    right: 335px;
+    top:0;
+    background-color: rgb(3, 83, 255)
+}
+body{
+    background-image: url(../public/Images/12.avif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+img{
+    height: 400px;
+    width: 400px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style-type:upper-alpha;
+    box-shadow: 10px 4px 25px 3px #3a3a3a
+
+}
+
+.the-old-Devices{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-right: 10000px;
+
+}
+h3{
+    font-family: monospace;
+    color: rgb(25, 56, 231);
+    text-decoration: dashed;
+    text-align: center;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(41, 73, 255);
+    font-size: 300%;
+    margin: 100px 200px 50px 200px;
+    padding: 10px 10% 10px 10%;
+}
+h2{
+    font-family: monospace;
+    color: rgb(25, 56, 231);
+    text-align: center;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(41, 73, 255);
+    font-size: 400%;
+    margin: 100px 150px 50px 150px;
+    padding: 10px 10% 10px 10% ;
+}
+
+.Game_Boy_Color{
+    display: flex;           /* تفعيل Flexbox */
+    align-items: center;     /* محاذاة رأسية في الوسط */
+    gap: 20px;               /* مسافة بين الصورة والنص */
+    margin-bottom: 20px;     /* مسافة أسفل كل منتج */
+} 
+.top-prodacts-img{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.Game_Boy_Color-img{
+    width: 400px;
+    height: 400px;
+           
+}
+.Game_Boy_Color .text {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    margin-right: 100000px;
+}

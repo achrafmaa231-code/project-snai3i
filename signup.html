@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signup.css">
+
+    <style>
+        .screen {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div id="screen1" class="screen active">
+
+    <h1 id="vgg"> Sign up </h1>
+
+    <div class="name">
+        <label>First name</label>
+        <input type="text" placeholder="First name">
+    </div>
+
+    <div class="name">
+        <label>Last name</label>
+        <input type="text" placeholder="Last name">
+    </div>
+
+    <div class="name">
+        <label>Email</label>
+        <input type="email" placeholder="Email">
+    </div>
+
+    <div class="name">
+        <label>Password</label>
+        <input type="password" placeholder="Password">
+    </div>
+
+    <div class="input">
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+        <br><br>
+        <button class="bbb" id="signupBtn">Sign up</button>
+    </div>
+
+</div>
+<div id="screen2" class="screen">
+    
+  
+    <button class="bbb" id="signupBtn">Sign up</button>
+
+<script>
+  document.getElementById("signupBtn").addEventListener("click", function () {
+    window.location.href = "Index.html";
+  });
+</script><button class="bbb" id="signupBtn">Sign up</button>
+
+</div>
+<script>
+    const screen1 = document.getElementById("screen1");
+    const screen2 = document.getElementById("screen2");
+
+    document.getElementById("signupBtn").addEventListener("click", () => {
+        screen1.classList.remove("active");
+        screen2.classList.add("active");
+    });
+
+    document.getElementById("backBtn").addEventListener("click", () => {
+        screen2.classList.remove("active");
+        screen1.classList.add("active");
+    });
+</script>
+
+
+</body>
+</html>
