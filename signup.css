@@ -22,7 +22,7 @@
     
 }
 body{
-    background-image: url(../public/Images/12.avif);
+    background-image: url(./Images/12.avif);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
