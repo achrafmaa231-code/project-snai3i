@@ -60,26 +60,28 @@ h2{
     margin: 100px 150px 50px 150px;
     padding: 10px 10% 10px 10% ;
 }
-
-.Game_Boy_Color{
-    display: flex;           
-    align-items: center;     
-    gap: 20px;               
-    margin-bottom: 20px;    
-} 
 .top-prodacts-img{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  display: flex;              
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
 }
+.Game_Boy_Color{
+  display: flex;              
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+}
+
 .Game_Boy_Color-img{
-    width: auto;
-    height: 400px;
-           
+  height: auto;
+  flex-direction: column;
 }
-.Game_Boy_Color .text {
-    display: flex;
-    font-size: 200%;
-    flex-direction: row;
-    align-items: center;
+
+.Game_Boy_Color-text{
+  display: flex;              
+  flex-direction: column;     
+  gap: 5px;
+  font-family: fantasy;
+  font-size: 100%;
 }
