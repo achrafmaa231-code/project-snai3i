@@ -1,20 +1,18 @@
-const products = document.getElementById("products");
+document.addEventListener("DOMContentLoaded", function () {
 
-const device = {
-  name: "Game Boy Color",
-  price: "55.9 $",
-  image: "Images/gameboy.png"
-};
+  const products = document.getElementById("products");
 
-const div = document.createElement("div");
-div.className = "Game_Boy_Color";
+  const div = document.createElement("div");
+  div.className = "Game_Boy_Color";
 
-div.innerHTML = `
-  <img src="${device.image}">
-  <div class="Game_Boy_Color-text">
-    <p>name: ${device.name}</p>
-    <p>price: ${device.price}</p>
-  </div>
-`;
+  div.innerHTML = `
+    <img src="Images/gameboy.png" alt="Game Boy">
+    <div class="Game_Boy_Color-text">
+      <p>name: Game Boy Color</p>
+      <p>price: 55.9 $</p>
+    </div>
+  `;
 
-products.appendChild(div);
+  products.appendChild(div);
+
+});

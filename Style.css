@@ -63,25 +63,38 @@ h2{
 .top-prodacts-img{
   display: flex;              
   align-items: center;
-  gap: 20px;
   flex-direction: column;
+  height: 400px;
 }
 .Game_Boy_Color{
   display: flex;              
   align-items: center;
   gap: 20px;
   flex-direction: column;
+  align-items: flex-start;
 }
 
 .Game_Boy_Color-img{
-  height: auto;
-  flex-direction: column;
+  height:400px;
+  width: 300px;
+  flex-direction:row;
+  gap: 10px;
 }
 
 .Game_Boy_Color-text{
   display: flex;              
-  flex-direction: column;     
+  flex-direction: row;     
   gap: 5px;
-  font-family: fantasy;
-  font-size: 100%;
+  font-family:cursive;
+  font-size: 120%;
+  position: relative;
+  left: 310px;
+  bottom: 300px;
+
+}
+button{
+    background-color: rgb(7, 7, 253);
+}
+button:hover{
+    background-color: rgb(74, 74, 243);
 }
