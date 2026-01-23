@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buy Product</title>
-     <link rel="stylesheet" href="Index.html">
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
+            background-image: url(../public/Images/12.avif);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -16,7 +19,7 @@
         }
 
         .buy-container {
-            background: white;
+            background: rgba(255,255,255,0.95);
             padding: 25px;
             border-radius: 10px;
             width: 300px;
@@ -43,13 +46,7 @@
             cursor: pointer;
             font-size: 16px;
         }
-        body{
-    background-image: url(../public/Images/12.avif);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-        }
+
         .confirm {
             background-color: #28a745;
             color: white;
@@ -64,22 +61,30 @@
 <body>
 
 <div class="buy-container">
-    <h2>Product name</h2>
-    <p>Handheld Game Console</p>
-
-    <p class="price">Price: 55,9 $</p>
+    <h2>Product</h2>
+    <p id="productName"></p>
+    <p id="productPrice" class="price"></p>
 
     <button class="confirm" onclick="confirmBuy()">Confirm Buy</button>
     <button class="back" onclick="goBack()">Back to shop</button>
 </div>
 
 <script>
+    // عرض المنتج والسعر المخزن من localStorage
+    const name = localStorage.getItem("productName");
+    const price = localStorage.getItem("productPrice");
+
+    document.getElementById("productName").textContent = name;
+    document.getElementById("productPrice").textContent = "Price: " + price + "$";
+
+    // دالة تأكيد الشراء
     function confirmBuy() {
-        alert("✅ Purchase successful!");
+        alert("✅ Purchase successful for " + name + " at " + price + "$!");
     }
 
+    // دالة العودة للمتجر
     function goBack() {
-        window.location.href = "index.html"; 
+        window.location.href = "Index.html"; // رابط صفحة المتجر
     }
 </script>
 

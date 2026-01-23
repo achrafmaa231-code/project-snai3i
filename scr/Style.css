@@ -113,6 +113,7 @@ button:hover{
   position: relative;
   left: 310px;
   bottom: 300px;
+  cursor: pointer;
 }
 .the-new-Devices{
     display: flex;

@@ -8,18 +8,19 @@
     flex-direction: column;
     align-items: center;        
 }
-#vgg{
+#signup-text{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.bbb{
+button{
     background-color: blue;
     font-size: 35px;
+    cursor: pointer;    
 }
-.bbb:hover{
+button:hover{
     background-color:rgb(63, 63, 247);
-    
+
 }
 body{
     background-image: url(../public/Images/12.avif);
