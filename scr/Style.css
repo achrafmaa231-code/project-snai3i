@@ -10,7 +10,7 @@
     border-color: rgb(70, 52, 175);
 }    
 body{
-    background-image: url(./Images/12.avif);
+    background-image: url(../public/Images/12.avif);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -97,4 +97,33 @@ button{
 }
 button:hover{
     background-color: rgb(74, 74, 243);
+}
+.Portable_Arcade-img{
+  height:400px;
+  width: 300px;
+  flex-direction:row;
+  gap: 10px;
+}
+.buyBtn{
+  display: flex;              
+  flex-direction: row;     
+  gap: 5px;
+  font-family:cursive;
+  font-size: 120%;
+  position: relative;
+  left: 310px;
+  bottom: 300px;
+}
+.the-new-Devices{
+    display: flex;
+    font-family: monospace;
+    color: rgb(25, 56, 231);
+    text-decoration: dashed;
+    align-items: center;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(41, 73, 255);
+    font-size: 300%;
+    margin: 100px 200px 50px 200px;
+    padding: 10px 10% 10px 10%;
 }

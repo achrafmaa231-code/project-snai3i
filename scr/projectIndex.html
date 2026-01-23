@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Product</title>
+     <link rel="stylesheet" href="Index.html">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .buy-container {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        .price {
+            color: green;
+            font-size: 20px;
+            margin: 15px 0;
+        }
+
+        button {
+            padding: 10px;
+            width: 100%;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        body{
+    background-image: url(../public/Images/12.avif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+        }
+        .confirm {
+            background-color: #28a745;
+            color: white;
+        }
+
+        .back {
+            background-color: #007bff;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<div class="buy-container">
+    <h2>Product name</h2>
+    <p>Handheld Game Console</p>
+
+    <p class="price">Price: 55,9 $</p>
+
+    <button class="confirm" onclick="confirmBuy()">Confirm Buy</button>
+    <button class="back" onclick="goBack()">Back to shop</button>
+</div>
+
+<script>
+    function confirmBuy() {
+        alert("✅ Purchase successful!");
+    }
+
+    function goBack() {
+        window.location.href = "index.html"; 
+    }
+</script>
+
+</body>
+</html>
