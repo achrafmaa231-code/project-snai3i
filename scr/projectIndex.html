@@ -70,21 +70,18 @@
 </div>
 
 <script>
-    // عرض المنتج والسعر المخزن من localStorage
     const name = localStorage.getItem("productName");
     const price = localStorage.getItem("productPrice");
 
     document.getElementById("productName").textContent = name;
     document.getElementById("productPrice").textContent = "Price: " + price + "$";
 
-    // دالة تأكيد الشراء
     function confirmBuy() {
         alert("✅ Purchase successful for " + name + " at " + price + "$!");
     }
 
-    // دالة العودة للمتجر
     function goBack() {
-        window.location.href = "Index.html"; // رابط صفحة المتجر
+        window.location.href = "Index.html"; 
     }
 </script>
 
