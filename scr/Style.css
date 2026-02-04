@@ -35,15 +35,7 @@ img{
 }
 .the-old-Devices{
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-
-}
-.the-new-Devices{
-    display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -59,7 +51,6 @@ h2{
     border-color: rgb(212, 131, 54);
     font-size: 300%;
     margin: 50px 50px 50px 50px;
-
     right: 335px;
     top:0;
     background-color: rgb(228, 149, 53)
@@ -73,6 +64,21 @@ h3{
     border-radius: 10px;
     border-color: rgb(70, 52, 175);
     font-size: 200%;
+    margin: 20px 20px 20px 20px;
+    right: 335px;
+    top:0;
+    background-color: rgb(3, 83, 255)
+}
+.h3{
+    font-family: monospace;
+    color: rgb(51, 35, 141);
+    text-decoration: dashed;
+    text-align: center;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(70, 52, 175);
+    font-size: 200%;
+    padding: 5px 525px 5px 525px;
     margin: 20px 20px 20px 20px;
     right: 335px;
     top:0;
